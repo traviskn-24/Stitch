@@ -1,0 +1,28 @@
+[project]
+name = "stitch"
+version = "1.0.0"
+description = "A private, one-line-a-day photo journal for mobile devices."
+requires-python = ">=3.10"
+dependencies = [
+    "flet>=1.0,<2.0",
+    "flet-camera>=1.0.5",
+]
+
+[dependency-groups]
+dev = ["flet-cli>=1.0,<2.0"]
+
+[tool.flet]
+org = "com.stitch"
+product = "Stitch"
+company = "JVG STUDIOS"
+icon_background = "#F7F6F2"
+
+[tool.flet.app]
+path = "src"
+
+[tool.flet.android]
+permissions = ["camera"]
+
+[tool.flet.ios.info]
+NSCameraUsageDescription = "Stitch uses the camera to add a photo to your daily journal entry."
+NSPhotoLibraryUsageDescription = "Choose a photo to keep with your daily journal entry."

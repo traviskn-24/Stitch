@@ -1,0 +1,26 @@
+# Python environments and caches
+.venv/
+__pycache__/
+*.py[cod]
+
+# Flet and platform build output, including generated APKs
+build/
+dist/
+*.apk
+*.aab
+*.ipa
+
+# Local journal data and environment secrets
+.one-line-journal/
+*.sqlite
+*.sqlite3
+*.db
+.env
+.env.*
+!.env.example
+
+# Editor and operating system files
+.DS_Store
+Thumbs.db
+.vscode/
+*.swp
